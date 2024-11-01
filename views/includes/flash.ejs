@@ -1,0 +1,20 @@
+<%if(success && success.length){%>
+    <!-- //here success what we are creating is an array  
+     hence if we check only the condition as if(success) the flash will appear.
+     Hence,we add a additional condition as success.length if any value exists in success array-->
+    <div class="alert alert-success alert-dismissible fade show  col-6 offset-3" 
+    role="alert">
+    <%= success%>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<%}%>
+<% if(error && error.length){%>
+    <!-- //here error what we are creating is an array  
+     hence if we check only the condition as if(error) the flash will appear.
+     Hence,we add a additional condition as error.length if any value exists in error array-->
+    <div class="alert alert-danger alert-dismissible fade show  col-6 offset-3" 
+    role="alert">
+    <%= error%>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<%}%>
